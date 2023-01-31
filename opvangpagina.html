@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PortFolie eindopdracht web-2</title>
+
+    <link rel="stylesheet" href="css/almighty.css">
+
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon/icons/icons8-kermit-the-frog-16.png">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div>
+            <div class="space"></div>
+        </div>
+
+        <div class="navbox">
+            <a href="#homepage">
+                <div class="test">
+                    <h1>Home</h1>
+                </div>
+
+            </a>
+            <a href="#Experience">
+                <div class="test">
+                    <h1>Experience</h1>
+                </div>
+
+            </a>
+            <a href="#work">
+                <div class="test">
+                    <h1>My Work</h1>
+                </div>
+
+            </a>
+            <a href="#contact">
+                <div class="test">
+                    <h1>Contact</h1>
+                </div>
+            </a>
+
+        </div>
+
+    </nav>
+    <main>
+
+        <section class="homepage" id="homepage">
+            <div class="foto"><img src="fotos/D879D87D-6BD1-48CF-B10E-E3C42DB4C99F.jpeg" alt="foto"></div>
+
+            <div class="contacttable">
+
+                <h2>Hey! I am Damien, Nice to meet you</h2>
+                <p>I am an Webdeveloper in school and this is my Portfolio project</p>
+
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Name: Damien Engelen</h3>
+                        </td>
+                        <td>
+                            <h3>Location: Nijmegen</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Birthday: 14 December 2001</h3>
+                        </td>
+                        <td>
+                            <h3>Phone: 0653829276</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Experience: 1 Year</h3>
+                        </td>
+                        <td>
+                            <h3>Degree: Minor</h3>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="download-button">Download CV</button>
+
+            </div>
+
+        </section>
+
+        <section class="experience" id="Experience">
+
+            <h2>Experience and Education</h2>
+
+            <div class="experiencebalken" id="idbalken">
+
+                <div class="progress-bar">
+                    <div class="progress-naam">HTML</div>
+                    <div class="progressgoed" style="width: 0%;" id="progresshtml"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-naam">JavaScript</div>
+                    <div class="progressmatig" style="width: 0%;" id="progressjavas"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-naam">PHP</div>
+                    <div class="progressmatig" style="width: 0%;" id="progressphp"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-naam">Java</div>
+                    <div class="progressslecht" style="width: 0%;" id="progresssjava"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="work" id="work">
+            <h2>My Work</h2>
+            <div class="werkfoto" id="punt">
+                <img src="fotos/a-typical-work-week-for-software-developers-the-raw-numbers-VoazD.jpeg" alt="werkfoto" class="slide">
+                <img src="fotos/canva-software-developer-working.jpg.webp" alt="werkfoto" class="slide">
+                <img src="fotos/1660181074645.jpeg" alt="werkfoto" class="slide">
+                <img src="fotos/Nguyet-Bao.jpg" alt="werkfoto" class="slide">
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <h2> Contact</h2>
+
+            <div class="contactformulier">
+
+                <form action="submit-form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="icons">
+
+            <a href="https://www.instagram.com"><img src="favicon/icons/instagram.png" alt="icon"></a>
+            <a href="https://www.twitter.com"><img src="favicon/icons/twitter.png" alt="icon"></a>
+            <a href="https://www.facebook.com"><img src="favicon/icons/facebook.png" alt="icon"></a>
+            <a href="https://www.github.com"><img src="favicon/icons/github.png" alt="icon"></a>
+
+        </div>
+
+        <p>Copyright © Damien Engelen | <a href="mailto:damienengelen142001@gmail.com">Contact</a></p>
+
+    </footer>
+    <script src="java/main.js"></script>
+</body>
+
+</html>

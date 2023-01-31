@@ -1,0 +1,335 @@
+/*de algemene stijl*/
+/*alles wat ik hier inzet word op alles toegepast bijvoorbeeld de font style*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*dit is hoe scroll animatie werkt*/
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    color: #3D3D3D;
+}
+
+h3 {
+    color: #3D3D3D;
+}
+
+
+h4 {
+    color: #3D3D3D;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/*sticky nav zodat de navbar lekker meegaat met scrollen*/
+nav {
+    position: sticky;
+    display: flex;
+    height: 7vh;
+    width: 100vw;
+    background-color: #333333;
+    top: 0px;
+    z-index: 99;
+}
+
+/*dit verdeeld mijn pagina zodat ik alles netjes onder elkaar kan zetten*/
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #3D3D3D;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*dit betekend gewoon heel simpel, wat ik type in text of mail krijgt deze stijl*/
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3D3D3D;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*als ik hover over de submit div krijg ik het affect hover*/
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*het moment dat ik hover boven een link in de footer past hij dit toe*/
+footer a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+
+.navbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 7vh;
+    width: 33vw;
+}
+
+/*extra ruimte creeren in de navbalk*/
+.space {
+    height: 7vh;
+    width: 33vw;
+}
+
+
+.homepage {
+    background-color: #C0C0C0;
+}
+
+.homepage .foto {
+    width: 40%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 20vh;
+}
+
+.homepage .foto img {
+    width: 400px;
+    height: 400px;
+    margin-top: 4vh;
+
+}
+
+.homepage .contacttable {
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    position: relative;
+    top: 30vh;
+}
+
+.homepage .contacttable td {
+    width: 300px;
+}
+
+.homepage .contacttable h2 {
+    font-size: 300%;
+    margin-bottom: 5px;
+}
+
+.homepage .contacttable h3 {
+    font-size: 100%;
+    margin-top: 20px;
+}
+
+.homepage .contacttable p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding-bottom: 35px;
+    padding-top: 5px;
+}
+
+.download-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4CAF50;
+    color: #3D3D3D;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 4px 2px;
+    /*hier maak ie een kleine transitie naar een wat zachtere kleur*/
+    transition: background-color 0.3s ease;
+    padding: 20px;
+    margin-top: 15vh;
+    margin-left: 6vw;
+}
+
+.download-button:hover {
+    background-color: #3e8e41;
+}
+
+
+.experience {
+    padding-top: 55px;
+    background-color: #C0C0C0;
+}
+
+
+.experience h2 {
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.experiencebalken {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 75vw;
+    margin-left: 207px;
+    margin-top: 5%;
+}
+
+.percentatiebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 25%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.progress-naam {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.progressgoed {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.progressmatig {
+    height: 100%;
+    background-color: #f58504;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.progressslecht {
+    height: 100%;
+    background-color: #f60606;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
+.work {
+    padding-top: 55px;
+    background-color: #C0C0C0;
+}
+
+.work h2 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.werkfoto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 75vh;
+    width: 100vw;
+    color: aqua;
+
+}
+
+.work .werkfoto img {
+    height: 250px;
+    width: 250px;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: slideIn 3s ease-in-out;
+    opacity: 1;
+}
+
+
+@keyframes slideIn {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.contact {
+    padding-top: 55px;
+    background-color: #C0C0C0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 70px;
+}
+
+.contactformulier {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+    width: 33vw;
+    margin-left: 33vw;
+}
+
+.icons img {
+    height: 2vw;
+    width: 2vw;
+}
